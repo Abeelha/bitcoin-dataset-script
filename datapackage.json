@@ -1,0 +1,83 @@
+{
+  "name": "bitcoin-price-data",
+  "title": "Bitcoin Price Data",
+  "description": "Daily Bitcoin price, market capitalization, and trading volume data from CoinGecko API",
+  "version": "1.0.0",
+  "created": "2025-08-22T11:42:49.170314",
+  "contributors": [
+    {
+      "title": "Abeelha (Data Package Creator)",
+      "roles": [
+        "creator",
+        "maintainer"
+      ]
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "title": "CoinGecko API",
+      "path": "https://api.coingecko.com/api/v3",
+      "description": "Free cryptocurrency price API"
+    }
+  ],
+  "keywords": [
+    "bitcoin",
+    "cryptocurrency",
+    "price",
+    "market-data",
+    "financial"
+  ],
+  "resources": [
+    {
+      "name": "bitcoin-prices",
+      "path": "data/processed/bitcoin_prices.csv",
+      "title": "Bitcoin Daily Prices",
+      "description": "Daily Bitcoin price, market cap, and volume data",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 36600,
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "date",
+            "title": "Date",
+            "description": "Date of price data (YYYY-MM-DD)"
+          },
+          {
+            "name": "datetime",
+            "type": "datetime",
+            "title": "DateTime",
+            "description": "Full timestamp of price data"
+          },
+          {
+            "name": "price",
+            "type": "number",
+            "title": "Price (USD)",
+            "description": "Bitcoin price in US Dollars"
+          },
+          {
+            "name": "market_cap",
+            "type": "integer",
+            "title": "Market Capitalization",
+            "description": "Total market capitalization in USD"
+          },
+          {
+            "name": "volume",
+            "type": "integer",
+            "title": "24h Trading Volume",
+            "description": "24-hour trading volume in USD"
+          }
+        ]
+      }
+    }
+  ]
+}
