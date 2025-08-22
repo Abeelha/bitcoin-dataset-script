@@ -16,6 +16,8 @@ This Data Package provides comprehensive Bitcoin market data including:
 - **Historical trends** (1 year lookback)
 
 Data is automatically collected from the [CoinGecko API](https://api.coingecko.com/) and follows the [Frictionless Data Package](https://datapackage.org/) standard.
+<img width="683" height="381" alt="image" src="https://github.com/user-attachments/assets/fd738e1f-dd34-4dae-975e-69c48f78a57f" />
+
 
 ## 🚀 Quick Start
 
