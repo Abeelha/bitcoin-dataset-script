@@ -43,7 +43,7 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "bytes": 36600,
+      "bytes": 24309,
       "schema": {
         "fields": [
           {
